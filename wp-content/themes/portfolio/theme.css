@@ -1,0 +1,58 @@
+/*Green text in title*/
+b {
+	color: #ffa6c9;
+	font-weight: normal;
+}
+
+/*Rotating text*/
+
+.rotating_img .elementor-widget-container {
+	animation:rotating 6s infinite linear;
+	z-index: 9000;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*CSS for exp section*/
+
+.exp_box {
+	position: relative;
+}
+
+.exp_box::after {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	background: #ffa6c9;
+	border-radius: 50%;
+	left: -5px;
+	top: 0;
+}
+
+.exp_box:hover .exp_title p{
+	color: #ffa6c9 !important;
+}
+
+/*css for right side menu*/
+
+.menu_container{
+	width:35px
+}
+
+.menu_container .e-con-inner {
+	margin: 0 !important;
+	--content-width: 100%;
+}
+
+.eael-tooltip {
+	min-width: 30px !important;
+	padding: 2px 0px !important;
+}
